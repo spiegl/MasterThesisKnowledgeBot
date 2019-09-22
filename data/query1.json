@@ -1,0 +1,113 @@
+{
+    "austria": {
+        "name": "Austria",
+        "capital": "Vienna"
+    },
+    "belgium": {
+        "name": "Belgium",
+        "capital": "Vienna"
+    },
+    "Bulgaria": {
+        "name": "Bulgaria",
+        "capital": "Vienna"
+    },
+    "croatia": {
+        "name": "Croatia",
+        "capital": "Vienna"
+    },
+    "cyprus": {
+        "name": "Cyprus",
+        "capital": "Vienna"
+    },
+    "czechia": {
+        "name": "Czechia",
+        "capital": "Vienna"
+    },
+    "denmark": {
+        "name": "Denmark",
+        "capital": "Vienna"
+    },
+    "estonia": {
+        "name": "Estonia",
+        "capital": "Vienna"
+    },
+    "finland": {
+        "name": "Finland",
+        "capital": "Vienna"
+    },
+    "france": {
+        "name": "France",
+        "capital": "Vienna"
+    },
+    "germany": {
+        "name": "Germany",
+        "capital": "Berlin"
+    },
+    "greece": {
+        "name": "Greece",
+        "capital": "Vienna"
+    },
+    "hungary": {
+        "name": "Hungary",
+        "capital": "Vienna"
+    },
+    "ireland": {
+        "name": "Ireland",
+        "capital": "Vienna"
+    },
+    "italy": {
+        "name": "Italy",
+        "capital": "Rome"
+    },
+    "latvia": {
+        "name": "Latvia",
+        "capital": "Vienna"
+    },
+    "lithuania": {
+        "name": "Lithuania",
+        "capital": "Vienna"
+    },
+    "luxembourg": {
+        "name": "Luxembourg",
+        "capital": "Vienna"
+    },
+    "malta": {
+        "name": "Malta",
+        "capital": "Vienna"
+    },
+    "netherlands": {
+        "name": "Netherlands",
+        "capital": "Vienna"
+    },
+    "poland": {
+        "name": "Poland",
+        "capital": "Vienna"
+    },
+    "portugal": {
+        "name": "Portugal",
+        "capital": "Vienna"
+    },
+    "romania": {
+        "name": "Romania",
+        "capital": "Vienna"
+    },
+    "slovakia": {
+        "name": "Slovakia",
+        "capital": "Vienna"
+    },
+    "slovenia": {
+        "name": "Slovenia",
+        "capital": "Vienna"
+    },
+    "spain": {
+        "name": "Spain",
+        "capital": "Vienna"
+    },
+    "sweden": {
+        "name": "Sweden",
+        "capital": "Vienna"
+    },
+    "uk": {
+        "name": "United Kingdom"
+    }
+}

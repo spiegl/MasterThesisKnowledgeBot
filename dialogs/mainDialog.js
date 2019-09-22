@@ -110,11 +110,7 @@ class MainDialog extends ComponentDialog {
             console.log(luisResult.entities);
             console.log(luisResult.entities.$instance);
 
-            //console.log(luisResult.entities.Country[0][0]);
-
-            //let country = luisResult.entities.$instance.Country[0].text;
             let country = luisResult.entities.Country[0][0];
-            //let property = 'capital';
             let property = luisResult.entities.CountryProperty[0][0];
 
             let answer = Data.query(country, property);
@@ -123,19 +119,12 @@ class MainDialog extends ComponentDialog {
             console.log(country, property, answer);
             console.log(answerText);
 
-            //const queryKMMessageText = `Query: intent was ${ LuisRecognizer.topIntent(luisResult) } with country ${country} and property ${property}`;
-            //await stepContext.context.sendActivity(queryKMMessageText, queryKMMessageText, InputHints.IgnoringInput);
             await stepContext.context.sendActivity(answerText);
 
             break;
         default:
             // Catch all for unhandled intents
-            const didntUnderstandMessageText = `Sorry, I didn't get that. Please try asking in a different way (intent was ${ LuisRecognizer.topIntent(luisResult) })`;
-
-            console.log(luisResult);
-            console.log(luisResult.entities);
-            console.log(luisResult.entities.$instance);
-
+            const didntUnderstandMessageText = `Sorry, I didn't get that. Please try asking in a different way.`;
             await stepContext.context.sendActivity(didntUnderstandMessageText, didntUnderstandMessageText, InputHints.IgnoringInput);
         }
 

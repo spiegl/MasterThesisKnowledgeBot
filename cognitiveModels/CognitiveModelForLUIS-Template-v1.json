@@ -342,22 +342,22 @@
         },
         {
             "text": "What can you do?",
-            "indent": "InfoAboutBot",
+            "intent": "InfoAboutBot",
             "entities": []
         },
         {
             "text": "What do you know?",
-            "indent": "InfoAboutBot",
+            "intent": "InfoAboutBot",
             "entities": []
         },
         {
             "text": "What is your reason of existence?",
-            "indent": "InfoAboutBot",
+            "intent": "InfoAboutBot",
             "entities": []
         },
         {
             "text": "Why are you here?",
-            "indent": "InfoAboutBot",
+            "intent": "InfoAboutBot",
             "entities": []
         }
     ],

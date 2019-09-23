@@ -1,8 +1,8 @@
 {
     "luis_schema_version": "4.0.0",
-    "versionId": "0.2",
-    "name": "FlightBooking",
-    "desc": "Luis Model for CoreBot // KMBot",
+    "versionId": "0.5",
+    "name": "KnowledgeBot",
+    "desc": "Luis Model for Daniel´s KnowledgeBot",
     "culture": "en-us",
     "tokenizerVersion": "1.0.0",
     "intents": [
@@ -20,6 +20,9 @@
         },
         {
             "name": "QueryKM"
+        },
+        {
+            "name": "InfoAboutBot"
         }
     ],
     "entities": [],
@@ -335,6 +338,26 @@
         {
             "text": "winter is coming",
             "intent": "None",
+            "entities": []
+        },
+        {
+            "text": "What can you do?",
+            "indent": "InfoAboutBot",
+            "entities": []
+        },
+        {
+            "text": "What do you know?",
+            "indent": "InfoAboutBot",
+            "entities": []
+        },
+        {
+            "text": "What is your reason of existence?",
+            "indent": "InfoAboutBot",
+            "entities": []
+        },
+        {
+            "text": "Why are you here?",
+            "indent": "InfoAboutBot",
             "entities": []
         }
     ],

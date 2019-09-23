@@ -25,8 +25,8 @@ const rawData = fs.readFileSync("../data/data.json", "utf8");
 data = JSON.parse(rawData);
 
 const countryPropertiesRawData = fs.readFileSync(
-    "../data/countryProperties.json",
-    "utf8"
+  "../data/countryProperties.json",
+  "utf8"
 );
 countryPropertiesData = JSON.parse(countryPropertiesRawData);
 
@@ -45,21 +45,21 @@ countryPropertiesData = JSON.parse(countryPropertiesRawData);
  */
 
 let countries = {
-    name: "Country",
-    subLists: [],
-    roles: []
+  name: "Country",
+  subLists: [],
+  roles: []
 };
 
 data.map(item => {
-    let country = {};
-    country["canonicalForm"] = item.iso.toLowerCase();
-    country["list"] = [];
-    country.list.push(item.name);
-    country.list.push(item.name.toLowerCase());
-    country.list.push(item.iso);
-    item.synonyms.map(innerItem => country.list.push(innerItem));
+  let country = {};
+  country["canonicalForm"] = item.iso.toLowerCase();
+  country["list"] = [];
+  country.list.push(item.name);
+  country.list.push(item.name.toLowerCase());
+  country.list.push(item.iso);
+  item.synonyms.map(innerItem => country.list.push(innerItem));
 
-    countries.subLists.push(country);
+  countries.subLists.push(country);
 });
 
 // log number of countries
@@ -70,19 +70,19 @@ console.log("\t" + countries.subLists.length + " records modified ...");
  */
 
 let countryProperties = {
-    name: "CountryProperty",
-    subLists: [],
-    roles: []
+  name: "CountryProperty",
+  subLists: [],
+  roles: []
 };
 
 countryPropertiesData.map(item => {
-    let prop = {};
-    prop["canonicalForm"] = item.canonicalForm.toLowerCase();
-    prop["list"] = [];
-    prop.list.push(item.name);
-    item.synonyms.map(innerItem => prop.list.push(innerItem));
+  let prop = {};
+  prop["canonicalForm"] = item.canonicalForm.toLowerCase();
+  prop["list"] = [];
+  prop.list.push(item.name);
+  item.synonyms.map(innerItem => prop.list.push(innerItem));
 
-    countryProperties.subLists.push(prop);
+  countryProperties.subLists.push(prop);
 });
 
 /**
@@ -96,24 +96,24 @@ countryPropertiesData.map(item => {
  */
 let utterancesRaw = [];
 countryPropertiesData.map(item => {
-    item.utterances.map(utterance => utterancesRaw.push(utterance));
+  item.utterances.map(utterance => utterancesRaw.push(utterance));
 });
 
 let utterances = [];
 utterancesRaw.map(utterance => {
-    data.map(country => {
-        utterances.push(utterance.replace("$country", country.name));
-    });
+  data.map(country => {
+    utterances.push(utterance.replace("$country", country.name));
+  });
 });
 
 let utterancesList = [];
 utterances.map(item => {
-    let utterance = {
-        text: item,
-        intent: "QueryKM",
-        entities: []
-    };
-    utterancesList.push(utterance);
+  let utterance = {
+    text: item,
+    intent: "QueryKM",
+    entities: []
+  };
+  utterancesList.push(utterance);
 });
 
 /**

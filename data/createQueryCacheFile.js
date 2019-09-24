@@ -2,37 +2,38 @@
  * This script reads the data file and creates a query cache file for KnowledgeBot
  */
 
-/**
- * Config
- */
-
-let input = "./data/data.json";
-let output = "./data/dataQueryCache.json";
+const fs = require("fs");
 
 /**
  * Init
  */
-console.log("Starting 'Create query cache files' ...");
+console.log("\nStarting 'Create query cache files' ...");
 
-const fs = require("fs");
-
-/**
- * Read data from data directory
- */
-let rawData = fs.readFileSync("./data/data.json", "utf8");
-data = JSON.parse(rawData);
+let inputFile = "",
+  outputFile = "",
+  data = null,
+  queryCache = null;
 
 /**
- * Modify data into following format
- *
- * "aut": {
- *    "name": "Austria",
- *    "capital": "Vienna",
- *    ...
- * }
+ * Main data file
  */
 
-let queryCache = {};
+// Config
+inputFile = "./data.json";
+outputFile = "./data/dataQueryCache.json";
+
+// Start processing
+console.log("\n\tProcessing " + inputFile);
+data = require(inputFile, "utf8");
+
+// Modify data into following format
+//     "aut": {
+//         "name": "Austria",
+//         "capital": "Vienna",
+//         ...
+//     }
+
+queryCache = {};
 
 data.map(item => {
   queryCache[item.iso.toLowerCase()] = item;
@@ -41,34 +42,28 @@ data.map(item => {
 // log number of countries
 console.log("\t" + data.length + " records modified ...");
 
-/**
- * Write query cache file
- */
-
-fs.writeFileSync(output, JSON.stringify(queryCache), "utf8");
-console.log("\tFile written to " + output);
-
-/////////////////////////////////////
-
-input = "./data/countryProperties.json";
-output = "./data/countryPropertiesQueryCache.json";
+// Write query cache file
+fs.writeFileSync(outputFile, JSON.stringify(queryCache), "utf8");
+console.log("\tFile written to " + outputFile);
 
 /**
- * Read data from data directory
- */
-rawData = fs.readFileSync("./data/countryProperties.json", "utf8");
-data = JSON.parse(rawData);
-
-/**
- * Modify data into following format
- *
- * "aut": {
- *    "name": "Austria",
- *    "capital": "Vienna",
- *    ...
- * }
+ * Country properties file
  */
 
+// Config
+inputFile = "./countryProperties.json";
+outputFile = "./data/countryPropertiesQueryCache.json";
+
+// Start processing
+console.log("\n\tProcessing " + inputFile);
+data = require(inputFile, "utf8");
+
+// Modify data into following format
+//     "aut": {
+//         "canonicalForm": "population",
+//         "name": "population",
+//         ...
+//     }
 queryCache = {};
 
 data.map(item => {
@@ -78,9 +73,6 @@ data.map(item => {
 // log number of countries
 console.log("\t" + data.length + " records modified ...");
 
-/**
- * Write query cache file
- */
-
-fs.writeFileSync(output, JSON.stringify(queryCache), "utf8");
-console.log("\tFile written to " + output);
+// Write query cache file
+fs.writeFileSync(outputFile, JSON.stringify(queryCache), "utf8");
+console.log("\tFile written to " + outputFile);

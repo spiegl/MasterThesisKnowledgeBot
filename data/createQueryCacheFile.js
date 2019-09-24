@@ -7,7 +7,7 @@
  */
 
 let input = "./data/data.json";
-let output = "./data/query.json";
+let output = "./data/dataQueryCache.json";
 
 /**
  * Init
@@ -51,7 +51,7 @@ console.log("\tFile written to " + output);
 /////////////////////////////////////
 
 input = "./data/countryProperties.json";
-output = "./data/countryPropertiesQuery.json";
+output = "./data/countryPropertiesQueryCache.json";
 
 /**
  * Read data from data directory

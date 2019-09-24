@@ -2,8 +2,8 @@
 
 class KmConnector {
     constructor(){
-        this.data = require('./data/query.json');
-        this.countryProperties = require('./data/countryPropertiesQuery.json');
+        this.data = require('./data/dataQueryCache.json');
+        this.countryProperties = require('./data/countryPropertiesQueryCache.json');
     }
 
     query(country, property){

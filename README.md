@@ -58,4 +58,4 @@ Deploy the bot to Azure: https://aka.ms/azuredeployment
 
 ## License
 
-This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICENSE.md) for details
+This project is licensed under the GNU GPLv3 License - see the [LICENSE](LICENSE) for details

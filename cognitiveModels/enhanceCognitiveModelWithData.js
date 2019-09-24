@@ -8,7 +8,7 @@
  * Config
  */
 
-let inputModelPath = "./CognitiveModelForLUIS-Template-v1.json";
+let inputModelPath = "./CognitiveModelBasis.json";
 let outputModelPath = "./output.json";
 
 /**

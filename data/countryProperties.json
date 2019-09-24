@@ -10,7 +10,8 @@
         "utterances": [
             "What is the ISO of $country?",
             "Which iso does $country have?",
-            "iso of $country?"
+            "iso of $country?",
+            "iso $country?"
         ],
         "defaultAnswer": "$country possess the ISO code $countryProperty."
     },
@@ -25,7 +26,8 @@
             "What is the name of $country?",
             "How is $country called?",
             "How is $country really called?",
-            "name of $country?"
+            "name of $country?",
+            "iso $country?"
         ],
         "defaultAnswer": "The country is officially named $country."
     },
@@ -42,7 +44,8 @@
             "Capital of $country?",
             "How is the capital of $country called?",
             "What is the name of the capital of $country?",
-            "What's the name of the capital of $country?"
+            "What's the name of the capital of $country?",
+            "capital $country?"
         ],
         "defaultAnswer": "The capital city of $country is $countryProperty."
     },
@@ -59,7 +62,8 @@
             "In which currency to they pay in $country?",
             "Which currency can you use in $country?",
             "How can I pay in $country?",
-            "currency of $country?"
+            "currency of $country?",
+            "currency $country?"
         ],
         "defaultAnswer": "In $country one should pay with $countryProperty."
     },
@@ -80,7 +84,8 @@
             "What is the area of $country?",
             "What's the area of $country?",
             "How many area does $country have?",
-            "area of $country?"
+            "area of $country?",
+            "area $country?"
         ],
         "defaultAnswer": "$country spreads over a area of $countryProperty K km2."
     },
@@ -98,7 +103,8 @@
             "What is the population in $country?",
             "What's the population in $country?",
             "How high is the population of $country?",
-            "population of $country"
+            "population of $country",
+            "population $country?"
         ],
         "defaultAnswer": "$country has a population of $countryProperty K."
     }

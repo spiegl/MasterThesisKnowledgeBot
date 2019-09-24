@@ -1,0 +1,26 @@
+[
+    {
+        "text": "Which countries do have more than 15 million inhabitants?",
+        "entities": {
+            "FilterValue": "15 million",
+            "FilterOperator": "more",
+            "CountryProperty": "inhabitants"
+        }
+    },
+    {
+        "text": "Which countries do have less than 7000 K inhabitants?",
+        "entities": {
+            "FilterValue": "7000 K",
+            "FilterOperator": "less",
+            "CountryProperty": "inhabitants"
+        }
+    },
+    {
+        "text": "How may countries do have more than 5000 people living in it?",
+        "entities": {
+            "FilterValue": "5000",
+            "FilterOperator": "more",
+            "CountryProperty": "people"
+        }
+    }
+]

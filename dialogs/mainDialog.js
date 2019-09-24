@@ -164,8 +164,20 @@ class MainDialog extends ComponentDialog {
         await stepContext.context.sendActivity(answerText);
 
         break;
+      case "FilterQueryKM":
+        await stepContext.context.sendActivity(
+          "Indent is FitlerQueryKM. Not programmed yet!"
+        );
+        break;
+      case "AggregateQueryKM":
+        await stepContext.context.sendActivity(
+          "Indent is AggregateQueryKM. Not programmed yet!"
+        );
+        break;
       case "InfoAboutBot":
-        await stepContext.context.sendActivity('I glad that you ask! I a litte bit about EU countries in special, which capitals they have and which currency they use. I also know about their population and area.');
+        await stepContext.context.sendActivity(
+          "I glad that you ask! I know a litte bit about EU countries in special, which capitals they have and which currency they use. I also know about their population and area."
+        );
         break;
       default:
         // Catch all for unhandled intents

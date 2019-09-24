@@ -22,11 +22,24 @@
             "name": "QueryKM"
         },
         {
+            "name": "FilterQueryKM"
+        },
+        {
+            "name": "AggregateQueryKM"
+        },
+        {
             "name": "InfoAboutBot"
         }
     ],
     "entities": [],
     "composites": [
+        {
+            "name": "FilterValue",
+            "children": [
+                "number"
+            ],
+            "roles": []
+        },
         {
             "name": "From",
             "children": [
@@ -43,6 +56,34 @@
         }
     ],
     "closedLists": [
+        {
+            "name": "FilterOperator",
+            "subLists": [
+                {
+                    "canonicalForm": "more",
+                    "list": [
+                        "more than"
+                    ]
+                },
+                {
+                    "canonicalForm": "less",
+                    "list": [
+                        "less than"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AggregateFunction",
+            "subLists": [
+                {
+                    "canonicalForm": "avg",
+                    "list": [
+                        "average"
+                    ]
+                }
+            ]
+        },
         {
             "name": "Airport",
             "subLists": [
@@ -89,7 +130,7 @@
     "regex_entities": [],
     "prebuiltEntities": [
         {
-            "name": "datetimeV2",
+            "name": "number",
             "roles": []
         }
     ],

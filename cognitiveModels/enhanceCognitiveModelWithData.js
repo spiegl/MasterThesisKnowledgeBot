@@ -66,7 +66,7 @@ data.map(item => {
 console.log("\t" + countries.subLists.length + " records modified ...");
 
 /**
- * Add Properties
+ * Add CountryProperties
  */
 
 let countryProperties = {
@@ -86,7 +86,7 @@ countryPropertiesData.map(item => {
 });
 
 /**
- * Add utterances
+ * Add utterances for QueryKM
  * 
  * {
         "text": "capital of italy?",
@@ -117,6 +117,62 @@ utterances.map(item => {
 });
 
 /**
+ * Add utterances for FilterQueryKM
+ *
+ */
+let utterancesFilterQueryRaw = require("./utterancesFilterQueryKM");
+
+let utterancesFilterQuery = [];
+utterancesFilterQueryRaw.map(item => {
+  let entities = [];
+  for (i in item.entities) {
+    let entity = i;
+    let text = item.entities[i];
+
+    entities.push({
+      entity: entity,
+      startPos: item.text.indexOf(text),
+      endPos: item.text.indexOf(text) + text.length - 1
+    });
+  }
+
+  let utterance = {
+    text: item.text,
+    intent: "FilterQueryKM",
+    entities: entities
+  };
+  utterancesFilterQuery.push(utterance);
+});
+
+/**
+ * Add utterances for AggregateQueryKM
+ *
+ */
+let utterancesAggregateQueryRaw = require("./utterancesAggregateQueryKM");
+
+let utterancesAggregateQuery = [];
+utterancesAggregateQueryRaw.map(item => {
+  let entities = [];
+  for (i in item.entities) {
+    let entity = i;
+    let text = item.entities[i];
+
+    entities.push({
+      entity: entity,
+      startPos: item.text.indexOf(text),
+      endPos: item.text.indexOf(text) + text.length - 1
+    });
+  }
+
+  let utterance = {
+    text: item.text,
+    intent: "AggregateQueryKM",
+    entities: entities
+  };
+  utterancesAggregateQuery.push(utterance);
+});
+
+/**
  * Read Template and insert modified data
  */
 let model = JSON.parse(fs.readFileSync("./" + inputModelPath, "utf8"));
@@ -124,6 +180,8 @@ let model = JSON.parse(fs.readFileSync("./" + inputModelPath, "utf8"));
 model.closedLists.push(countries);
 model.closedLists.push(countryProperties);
 model.utterances = model.utterances.concat(utterancesList);
+model.utterances = model.utterances.concat(utterancesFilterQuery);
+model.utterances = model.utterances.concat(utterancesAggregateQuery);
 
 //console.log(model)
 

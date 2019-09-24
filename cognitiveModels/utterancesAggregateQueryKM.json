@@ -1,0 +1,30 @@
+[
+    {
+        "text": "I want to know the average population!",
+        "entities": {
+            "AggregateFunction": "average",
+            "CountryProperty": "population"
+        }
+    },
+    {
+        "text": "What is the average population!",
+        "entities": {
+            "AggregateFunction": "average",
+            "CountryProperty": "population"
+        }
+    },
+    {
+        "text": "What is the average population of all EU countries!",
+        "entities": {
+            "AggregateFunction": "average",
+            "CountryProperty": "population"
+        }
+    },
+    {
+        "text": "How many people live in the EU member states on average!",
+        "entities": {
+            "AggregateFunction": "average",
+            "CountryProperty": "people"
+        }
+    }
+]

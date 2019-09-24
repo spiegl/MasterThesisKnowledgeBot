@@ -6,8 +6,8 @@
  * Config
  */
 
-let input = "./data.json";
-let output = "./query.json";
+let input = "./data/data.json";
+let output = "./data/query.json";
 
 /**
  * Init
@@ -19,7 +19,7 @@ const fs = require("fs");
 /**
  * Read data from data directory
  */
-let rawData = fs.readFileSync("./data.json", "utf8");
+let rawData = fs.readFileSync("./data/data.json", "utf8");
 data = JSON.parse(rawData);
 
 /**
@@ -35,7 +35,7 @@ data = JSON.parse(rawData);
 let queryCache = {};
 
 data.map(item => {
-    queryCache[item.iso.toLowerCase()] = item;
+  queryCache[item.iso.toLowerCase()] = item;
 });
 
 // log number of countries
@@ -48,16 +48,15 @@ console.log("\t" + data.length + " records modified ...");
 fs.writeFileSync(output, JSON.stringify(queryCache), "utf8");
 console.log("\tFile written to " + output);
 
-
 /////////////////////////////////////
 
-input = "./countryProperties.json";
-output = "./countryPropertiesQuery.json";
+input = "./data/countryProperties.json";
+output = "./data/countryPropertiesQuery.json";
 
 /**
  * Read data from data directory
  */
-rawData = fs.readFileSync("./countryProperties.json", "utf8");
+rawData = fs.readFileSync("./data/countryProperties.json", "utf8");
 data = JSON.parse(rawData);
 
 /**
@@ -73,7 +72,7 @@ data = JSON.parse(rawData);
 queryCache = {};
 
 data.map(item => {
-    queryCache[item.canonicalForm.toLowerCase()] = item;
+  queryCache[item.canonicalForm.toLowerCase()] = item;
 });
 
 // log number of countries

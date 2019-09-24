@@ -8,24 +8,24 @@
  * Config
  */
 
-let inputModelPath = "./CognitiveModelBasis.json";
-let outputModelPath = "./output.json";
+const inputModelPath = "./cognitiveModels/CognitiveModelBasis.json";
+const outputModelPath = "./cognitiveModels/output.json";
 
 /**
  * Init
  */
-console.log("Starting ...");
+console.log("Starting enhancing model ...");
 
 const fs = require("fs");
 
 /**
  * Read data from data directory
  */
-const rawData = fs.readFileSync("../data/data.json", "utf8");
+const rawData = fs.readFileSync("./data/data.json", "utf8");
 data = JSON.parse(rawData);
 
 const countryPropertiesRawData = fs.readFileSync(
-  "../data/countryProperties.json",
+  "./data/countryProperties.json",
   "utf8"
 );
 countryPropertiesData = JSON.parse(countryPropertiesRawData);
@@ -120,7 +120,7 @@ utterances.map(item => {
  * Add utterances for FilterQueryKM
  *
  */
-let utterancesFilterQueryRaw = require("./utterancesFilterQueryKM");
+let utterancesFilterQueryRaw = require("./utterancesFilterQueryKM.json");
 
 let utterancesFilterQuery = [];
 utterancesFilterQueryRaw.map(item => {
@@ -148,7 +148,7 @@ utterancesFilterQueryRaw.map(item => {
  * Add utterances for AggregateQueryKM
  *
  */
-let utterancesAggregateQueryRaw = require("./utterancesAggregateQueryKM");
+let utterancesAggregateQueryRaw = require("./utterancesAggregateQueryKM.json");
 
 let utterancesAggregateQuery = [];
 utterancesAggregateQueryRaw.map(item => {

@@ -1,6 +1,4 @@
 #!/bin/bash
-cd .
-cd cognitiveModels/ && nodejs enhanceCognitiveModelWithData.js
 
-cd -
-cd data/ && nodejs createQueryCacheFile.js
+nodejs cognitiveModels/enhanceCognitiveModelWithData.js
+nodejs data/createQueryCacheFile.js

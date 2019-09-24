@@ -3,6 +3,7 @@
  */
 
 const fs = require("fs");
+const path = require("path");
 
 /**
  * Init
@@ -20,7 +21,7 @@ let inputFile = "",
 
 // Config
 inputFile = "./data.json";
-outputFile = "./data/dataQueryCache.json";
+outputFile = "./dataQueryCache.json";
 
 // Start processing
 console.log("\n\tProcessing " + inputFile);
@@ -43,7 +44,11 @@ data.map(item => {
 console.log("\t" + data.length + " records modified ...");
 
 // Write query cache file
-fs.writeFileSync(outputFile, JSON.stringify(queryCache), "utf8");
+fs.writeFileSync(
+  path.resolve(__dirname, outputFile),
+  JSON.stringify(queryCache),
+  "utf8"
+);
 console.log("\tFile written to " + outputFile);
 
 /**
@@ -52,7 +57,7 @@ console.log("\tFile written to " + outputFile);
 
 // Config
 inputFile = "./countryProperties.json";
-outputFile = "./data/countryPropertiesQueryCache.json";
+outputFile = "./countryPropertiesQueryCache.json";
 
 // Start processing
 console.log("\n\tProcessing " + inputFile);
@@ -74,5 +79,9 @@ data.map(item => {
 console.log("\t" + data.length + " records modified ...");
 
 // Write query cache file
-fs.writeFileSync(outputFile, JSON.stringify(queryCache), "utf8");
+fs.writeFileSync(
+  path.resolve(__dirname, outputFile),
+  JSON.stringify(queryCache),
+  "utf8"
+);
 console.log("\tFile written to " + outputFile);

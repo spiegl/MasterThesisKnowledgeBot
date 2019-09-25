@@ -2,6 +2,7 @@
     {
         "canonicalForm": "iso",
         "name": "ISO",
+        "dataType": "string",
         "synonyms": [
             "country code",
             "code",
@@ -18,6 +19,7 @@
     {
         "canonicalForm": "name",
         "name": "name",
+        "dataType": "string",
         "synonyms": [
             "name",
             "jurisdiction"
@@ -34,6 +36,7 @@
     {
         "canonicalForm": "capital",
         "name": "capital",
+        "dataType": "string",
         "synonyms": [
             "main city",
             "city",
@@ -52,6 +55,7 @@
     {
         "canonicalForm": "currency",
         "name": "currency",
+        "dataType": "string",
         "synonyms": [
             "money",
             "Währung",
@@ -70,6 +74,7 @@
     {
         "canonicalForm": "area",
         "name": "area",
+        "dataType": "int",
         "synonyms": [
             "Fläche",
             "big",
@@ -92,6 +97,7 @@
     {
         "canonicalForm": "population",
         "name": "population",
+        "dataType": "string",
         "synonyms": [
             "inhabitants",
             "people",

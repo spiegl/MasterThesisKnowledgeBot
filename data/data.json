@@ -4,8 +4,8 @@
         "name": "Austria",
         "capital": "Vienna",
         "currency": "Euro",
-        "area": "83879",
-        "population": "8859",
+        "area": "83879000",
+        "population": "8859000",
         "synonyms": [
             "AT",
             "Österreich",
@@ -19,8 +19,8 @@
         "name": "Belgium",
         "capital": "Brussels",
         "currency": "Euro",
-        "area": "30528",
-        "population": "11468",
+        "area": "30528000",
+        "population": "11468000",
         "synonyms": [
             "BE",
             "Belgien",
@@ -33,8 +33,8 @@
         "name": "Bulgaria",
         "capital": "Sofia",
         "currency": "Lev",
-        "area": "110900",
-        "population": "7000",
+        "area": "110900000",
+        "population": "7000000",
         "synonyms": [
             "Republic of Bulgaria",
             "BG",
@@ -47,8 +47,8 @@
         "name": "Republic of Croatia",
         "capital": "Zagreb",
         "currency": "Kuna",
-        "area": "87661",
-        "population": "4076",
+        "area": "87661000",
+        "population": "4076000",
         "synonyms": [
             "HR",
             "Kroatien"
@@ -59,8 +59,8 @@
         "name": "Cyprus",
         "capital": "Nicosia",
         "currency": "Euro",
-        "area": "9251",
-        "population": "876",
+        "area": "9251000",
+        "population": "876000",
         "synonyms": [
             "CY",
             "Zypern"
@@ -71,8 +71,8 @@
         "name": "Czechia",
         "capital": "Prague",
         "currency": "Czech koruna",
-        "area": "78866",
-        "population": "10650",
+        "area": "78866000",
+        "population": "10650000",
         "synonyms": [
             "Czech Republic",
             "CZ",
@@ -87,8 +87,8 @@
         "name": "Denmark",
         "capital": "Copenhagen",
         "currency": "Danish krone",
-        "area": "42895",
-        "population": "5806",
+        "area": "42895000",
+        "population": "5806000",
         "synonyms": [
             "DK",
             "Dänemark",
@@ -100,8 +100,8 @@
         "name": "Estonia",
         "capital": "Tallinn",
         "currency": "Euro",
-        "area": "45227",
-        "population": "1325",
+        "area": "45227000",
+        "population": "1325000",
         "synonyms": [
             "EE",
             "Estland",
@@ -113,8 +113,8 @@
         "name": "Finland",
         "capital": "Helsinki",
         "currency": "Euro",
-        "area": "338432",
-        "population": "5518",
+        "area": "338432000",
+        "population": "5518000",
         "synonyms": [
             "FI",
             "Finnland",
@@ -126,8 +126,8 @@
         "name": "France",
         "capital": "Paris",
         "currency": "Euro",
-        "area": "632834",
-        "population": "67028",
+        "area": "632834000",
+        "population": "67028000",
         "synonyms": [
             "FR",
             "Frankreich",
@@ -139,8 +139,8 @@
         "iso": "GER",
         "capital": "Berlin",
         "currency": "Euro",
-        "area": "357137",
-        "population": "83019",
+        "area": "357137000",
+        "population": "83019000",
         "synonyms": [
             "DE",
             "BRD",
@@ -155,8 +155,8 @@
         "name": "Greece",
         "capital": "Athens",
         "currency": "Euro",
-        "area": "131957",
-        "population": "10722",
+        "area": "131957000",
+        "population": "10722000",
         "synonyms": [
             "GR",
             "Griechenland",
@@ -169,8 +169,8 @@
         "name": "Hungary",
         "capital": "Budapest",
         "currency": "Forint",
-        "area": "93024",
-        "population": "9773",
+        "area": "93024000",
+        "population": "9773000",
         "synonyms": [
             "HU",
             "Ungarn"
@@ -181,8 +181,8 @@
         "name": "Ireland",
         "capital": "Dublin",
         "currency": "Euro",
-        "area": "69797",
-        "population": "4904",
+        "area": "69797000",
+        "population": "4904000",
         "synonyms": [
             "IE",
             "Irland",
@@ -195,8 +195,8 @@
         "name": "Italy",
         "capital": "Rome",
         "currency": "Euro",
-        "area": "301336",
-        "population": "60360",
+        "area": "301336000",
+        "population": "60360000",
         "synonyms": [
             "Italien",
             "Italian Republic"
@@ -207,8 +207,8 @@
         "name": "Latvia",
         "capital": "Riga",
         "currency": "Euro",
-        "area": "64562",
-        "population": "1920",
+        "area": "64562000",
+        "population": "1920000",
         "synonyms": [
             "LV",
             "Lettland",
@@ -220,8 +220,8 @@
         "name": "Lithuania",
         "capital": "Vilnius",
         "currency": "Euro",
-        "area": "65300",
-        "population": "2794",
+        "area": "65300000",
+        "population": "2794000",
         "synonyms": [
             "LT",
             "Litauen",
@@ -233,8 +233,8 @@
         "name": "Luxembourg",
         "capital": "Luxembourg",
         "currency": "Euro",
-        "area": "2586",
-        "population": "614",
+        "area": "2586000",
+        "population": "614000",
         "synonyms": [
             "LU",
             "Luxemburg",
@@ -247,8 +247,8 @@
         "name": "Malta",
         "capital": "Valletta",
         "currency": "Euro",
-        "area": "316",
-        "population": "494",
+        "area": "316000",
+        "population": "494000",
         "synonyms": [
             "MT",
             "Republic of Malta"
@@ -259,8 +259,8 @@
         "name": "Netherlands",
         "capital": "Amsterdam",
         "currency": "Euro",
-        "area": "41540",
-        "population": "17282",
+        "area": "41540000",
+        "population": "17282000",
         "synonyms": [
             "NL",
             "Niederlande",
@@ -273,8 +273,8 @@
         "name": "Poland",
         "capital": "Warsaw",
         "currency": "Złoty",
-        "area": "312679",
-        "population": "37973",
+        "area": "312679000",
+        "population": "37973000",
         "synonyms": [
             "PL",
             "Polen",
@@ -287,8 +287,8 @@
         "name": "Portugal",
         "capital": "Lisbon",
         "currency": "Euro",
-        "area": "92212",
-        "population": "10277",
+        "area": "92212000",
+        "population": "10277000",
         "synonyms": [
             "PT",
             "Portuguese Republic"
@@ -299,8 +299,8 @@
         "name": "Romania",
         "capital": "Bucharest",
         "currency": "Romanian leu",
-        "area": "238391",
-        "population": "19402",
+        "area": "238391000",
+        "population": "19402000",
         "synonyms": [
             "RO",
             "Rumänien",
@@ -312,8 +312,8 @@
         "name": "Slovakia",
         "capital": "Bratislava",
         "currency": "Euro",
-        "area": "49036",
-        "population": "5450",
+        "area": "49036000",
+        "population": "5450000",
         "synonyms": [
             "SK",
             "Slowakai",
@@ -325,8 +325,8 @@
         "name": "Slovenia",
         "capital": "Ljubljana",
         "currency": "Euro",
-        "area": "20273",
-        "population": "2081",
+        "area": "20273000",
+        "population": "2081000",
         "synonyms": [
             "SI",
             "Slowenien",
@@ -338,8 +338,8 @@
         "name": "Spain",
         "capital": "Madrid",
         "currency": "Euro",
-        "area": "505990",
-        "population": "46935",
+        "area": "505990000",
+        "population": "46935000",
         "synonyms": [
             "ES",
             "Spanien",
@@ -352,8 +352,8 @@
         "name": "Sweden",
         "capital": "Stockholm",
         "currency": "Swedish krona",
-        "area": "438576",
-        "population": "10230",
+        "area": "438576000",
+        "population": "10230000",
         "synonyms": [
             "SE",
             "Schweden",
@@ -366,8 +366,8 @@
         "name": "United Kingdom",
         "capital": "London",
         "currency": "Pound sterling",
-        "area": "248528",
-        "population": "66647",
+        "area": "248528000",
+        "population": "66647000",
         "synonyms": [
             "GB",
             "UK",

@@ -167,7 +167,7 @@ class MainDialog extends CancelAndHelpDialog {
         await stepContext.context.sendActivity(answerText);
 
         break;
-      case "FilterQueryKM":
+      case "FilterQueryKMNum":
         let filterProperty = luisResult.entities.CountryProperty[0][0];
         let filterOperator = luisResult.entities.FilterOperator[0][0];
         let filterValue = luisResult.entities.FilterValue[0].number[0];
@@ -192,6 +192,11 @@ class MainDialog extends CancelAndHelpDialog {
           ".";
 
         await stepContext.context.sendActivity(filterAnswerText);
+        break;
+      case "FilterQueryKM":
+        await stepContext.context.sendActivity(
+            "Indent is FilterQueryKM. Not programmed yet!"
+        );
         break;
       case "AggregateQueryKM":
         await stepContext.context.sendActivity(

@@ -126,6 +126,39 @@ utterances.map(item => {
 console.log("\t" + utterancesFilterKM.length + " records processed ...");
 
 /**
+ * Add utterances for FilterQueryKMNum
+ *
+ */
+console.log("\n\tProcessing utterances for FilterQueryKMNum");
+
+let utterancesFilterQueryNumRaw = require("./utterancesFilterQueryKMNum.json");
+
+let utterancesFilterQueryNum = [];
+utterancesFilterQueryNumRaw.map(item => {
+  let entities = [];
+  for (i in item.entities) {
+    let entity = i;
+    let text = item.entities[i];
+
+    entities.push({
+      entity: entity,
+      startPos: item.text.indexOf(text),
+      endPos: item.text.indexOf(text) + text.length - 1
+    });
+  }
+
+  let utterance = {
+    text: item.text,
+    intent: "FilterQueryKMNum",
+    entities: entities
+  };
+  utterancesFilterQueryNum.push(utterance);
+});
+
+// log number of countries
+console.log("\t" + utterancesFilterQueryNum.length + " records processed ...");
+
+/**
  * Add utterances for FilterQueryKM
  *
  */
@@ -200,7 +233,10 @@ model.closedLists.push(countries);
 model.closedLists.push(countryProperties);
 model.utterances = model.utterances.concat(utterancesFilterKM);
 model.utterances = model.utterances.concat(utterancesFilterQuery);
+model.utterances = model.utterances.concat(utterancesFilterQueryNum);
 model.utterances = model.utterances.concat(utterancesAggregateQuery);
+
+model.versionId += " " + Math.floor(Date.now() / 1000);
 
 /**
  * Write model

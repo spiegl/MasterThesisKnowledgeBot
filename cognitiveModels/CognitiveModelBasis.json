@@ -1,8 +1,8 @@
 {
     "luis_schema_version": "4.0.0",
-    "versionId": "0.5",
+    "versionId": "0.7.7",
     "name": "KnowledgeBot",
-    "desc": "Luis Model for Daniel´s KnowledgeBot",
+    "desc": "Luis Model for KnowledgeBot",
     "culture": "en-us",
     "tokenizerVersion": "1.0.0",
     "intents": [
@@ -25,6 +25,9 @@
             "name": "FilterQueryKM"
         },
         {
+            "name": "FilterQueryKMNum"
+        },
+        {
             "name": "AggregateQueryKM"
         },
         {
@@ -34,7 +37,7 @@
     "entities": [],
     "composites": [
         {
-            "name": "FilterValue",
+            "name": "FilterValueNum",
             "children": [
                 "number"
             ],
@@ -62,13 +65,18 @@
                 {
                     "canonicalForm": "more",
                     "list": [
-                        "more than"
+                        "more than",
+                        "higher",
+                        "bigger",
+                        "larger"
                     ]
                 },
                 {
                     "canonicalForm": "less",
                     "list": [
-                        "less than"
+                        "less than",
+                        "smaller",
+                        "lesser"
                     ]
                 }
             ]
@@ -80,6 +88,17 @@
                     "canonicalForm": "avg",
                     "list": [
                         "average"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "FilterValue",
+            "subLists": [
+                {
+                    "canonicalForm": "euro",
+                    "list": [
+                        "Euro"
                     ]
                 }
             ]

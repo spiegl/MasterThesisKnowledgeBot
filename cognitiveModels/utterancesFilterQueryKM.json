@@ -1,42 +1,16 @@
 [
     {
-        "text": "Which countries do have more than 15 million inhabitants?",
+        "text": "How may countries have the Euro as currency?",
         "entities": {
-            "FilterValue": "15 million",
-            "FilterOperator": "more",
-            "CountryProperty": "inhabitants"
+            "CountryProperty": "currency",
+            "FilterValue": "Euro"
         }
     },
     {
-        "text": "Which countries do have less than 7000 K inhabitants?",
+        "text": "How may countries pay with Euro?",
         "entities": {
-            "FilterValue": "7000 K",
-            "FilterOperator": "less",
-            "CountryProperty": "inhabitants"
-        }
-    },
-    {
-        "text": "How may countries do have more than 5000 people living in it?",
-        "entities": {
-            "FilterValue": "5000",
-            "FilterOperator": "more",
-            "CountryProperty": "people"
-        }
-    },
-    {
-        "text": "Which countries are smaller than 500 km2?",
-        "entities": {
-            "FilterValue": "500",
-            "FilterOperator": "smaller",
-            "CountryProperty": "km2"
-        }
-    },
-    {
-        "text": "Which countries are bigger than 500 km2?",
-        "entities": {
-            "FilterValue": "500",
-            "FilterOperator": "bigger",
-            "CountryProperty": "km2"
+            "CountryProperty": "pay",
+            "FilterValue": "Euro"
         }
     }
 ]

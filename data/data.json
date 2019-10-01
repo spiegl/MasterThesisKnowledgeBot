@@ -392,5 +392,45 @@
             "Europa",
             "Union"
         ]
+    },
+    {
+        "iso": "lva-riga",
+        "country": "Latvia",
+        "name": "Riga",
+        "area": "307",
+        "population": "615369",
+        "synonyms": [
+            "capital of Latvia"
+        ]
+    },
+    {
+        "iso": "lva-vilnius",
+        "country": "Lithuania",
+        "name": "Vilnius",
+        "area": "401",
+        "population": "570806",
+        "synonyms": [
+            "capital of Lithuania"
+        ]
+    },
+    {
+        "iso": "bgr-sofia",
+        "country": "Sofia",
+        "name": "Bulgaria",
+        "area": "492",
+        "population": "1241675",
+        "synonyms": [
+            "capital of Bulgaria"
+        ]
+    },
+    {
+        "iso": "rou-bucharest",
+        "country": "Bucharest",
+        "name": "Romania",
+        "area": "228",
+        "population": "1883425",
+        "synonyms": [
+            "capital of Romania"
+        ]
     }
 ]

@@ -130,6 +130,6 @@
             "What are the neighboring countries of $country?",
             "$country is surrounded by?"
         ],
-        "defaultAnswer": "The neighbors of $county are: $countryProperty."
+        "defaultAnswer": "The neighbors of $country are: $countryProperty."
     }
 ]

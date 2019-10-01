@@ -225,8 +225,9 @@ class MainDialog extends CancelAndHelpDialog {
                 await stepContext.context.sendActivity(filterNumAnswerText);
                 break;
             case "FilterQueryKM":
-                let filterProperty = luisResult.entities.CountryProperty[0][0];
-                let filterValue = luisResult.entities.FilterValue[0][0];
+                let filterProperty, filterValue;
+                filterValue = luisResult.entities.FilterValue[0][0];
+                filterProperty = (filterValue == 'euro') ? 'currency' : luisResult.entities.CountryProperty[0][0];
 
                 const filterAnswer = Data.filter(
                     filterProperty,

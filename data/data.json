@@ -13,7 +13,9 @@
             "Ösiland",
             "Republic of Austria",
             "this country",
-            "here"
+            "here",
+            "austrian",
+            "austrias"
         ]
     },
     {
@@ -27,7 +29,9 @@
             "BE",
             "Belgien",
             "Königreich Belgien",
-            "Kingdom Belgium"
+            "Kingdom Belgium",
+            "belgian",
+            "belgiums"
         ]
     },
     {
@@ -41,7 +45,9 @@
             "Republic of Bulgaria",
             "BG",
             "BUL",
-            "Bulgarien"
+            "Bulgarien",
+            "bulgarian",
+            "bulgarians"
         ]
     },
     {
@@ -53,7 +59,9 @@
         "population": "4076000",
         "synonyms": [
             "HR",
-            "Kroatien"
+            "Kroatien",
+            "croatian",
+            "croatias"
         ]
     },
     {
@@ -175,7 +183,9 @@
         "population": "9773000",
         "synonyms": [
             "HU",
-            "Ungarn"
+            "Ungarn",
+            "hungarian",
+            "hungarias"
         ]
     },
     {
@@ -214,7 +224,9 @@
         "synonyms": [
             "LV",
             "Lettland",
-            "Republic of Latvia"
+            "Republic of Latvia",
+            "latvias",
+            "latvian"
         ]
     },
     {
@@ -227,7 +239,9 @@
         "synonyms": [
             "LT",
             "Litauen",
-            "Republic of Lithuania"
+            "Republic of Lithuania",
+            "lithuanian",
+            "lithuanias"
         ]
     },
     {
@@ -281,7 +295,9 @@
             "PL",
             "Polen",
             "Republic of Poland",
-            "Polska"
+            "Polska",
+            "polish",
+            "polan"
         ]
     },
     {
@@ -306,7 +322,9 @@
         "synonyms": [
             "RO",
             "Rumänien",
-            "Romania"
+            "Romania",
+            "romanian",
+            "romanias"
         ]
     },
     {

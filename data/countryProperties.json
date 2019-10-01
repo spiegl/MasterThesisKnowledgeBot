@@ -123,8 +123,7 @@
         "dataType": "string",
         "synonyms": [
             "members",
-            "member",
-            "countries"
+            "member"
         ],
         "utterances": [
             "How may member states does the EU have?",

@@ -133,5 +133,19 @@
             "member states eu?"
         ],
         "defaultAnswer": "The EU has 28 member states."
+    },
+    {
+        "canonicalForm": "neighbors",
+        "name": "neighbors",
+        "dataType": "string",
+        "synonyms": [
+            "neighboring"
+        ],
+        "utterances": [
+            "What are the neighbors of $country?",
+            "What are the neighboring countries of $country?",
+            "$country is surrounded by?"
+        ],
+        "defaultAnswer": "The neighbors of $county are: $countryProperty."
     }
 ]

@@ -6,6 +6,7 @@
         "currency": "Euro",
         "area": "83879000",
         "population": "8859000",
+        "neighbors": "Germany, Czech Republic, Slovakia, Hungary, Slovenia and Italy",
         "synonyms": [
             "AT",
             "Österreich",
@@ -25,6 +26,7 @@
         "currency": "Euro",
         "area": "30528000",
         "population": "11468000",
+        "neighbors": "",
         "synonyms": [
             "BE",
             "Belgien",
@@ -41,6 +43,7 @@
         "currency": "Lev",
         "area": "110900000",
         "population": "7000000",
+        "neighbors": "Greece and Romania",
         "synonyms": [
             "Republic of Bulgaria",
             "BG",
@@ -57,6 +60,7 @@
         "currency": "Kuna",
         "area": "87661000",
         "population": "4076000",
+        "neighbors": "",
         "synonyms": [
             "HR",
             "Kroatien",
@@ -71,6 +75,7 @@
         "currency": "Euro",
         "area": "9251000",
         "population": "876000",
+        "neighbors": "",
         "synonyms": [
             "CY",
             "Zypern"
@@ -83,6 +88,7 @@
         "currency": "Czech koruna",
         "area": "78866000",
         "population": "10650000",
+        "neighbors": "",
         "synonyms": [
             "Czech Republic",
             "CZ",
@@ -99,6 +105,7 @@
         "currency": "Danish krone",
         "area": "42895000",
         "population": "5806000",
+        "neighbors": "",
         "synonyms": [
             "DK",
             "Dänemark",
@@ -112,6 +119,7 @@
         "currency": "Euro",
         "area": "45227000",
         "population": "1325000",
+        "neighbors": "",
         "synonyms": [
             "EE",
             "Estland",
@@ -125,6 +133,7 @@
         "currency": "Euro",
         "area": "338432000",
         "population": "5518000",
+        "neighbors": "",
         "synonyms": [
             "FI",
             "Finnland",
@@ -138,6 +147,7 @@
         "currency": "Euro",
         "area": "632834000",
         "population": "67028000",
+        "neighbors": "",
         "synonyms": [
             "FR",
             "Frankreich",
@@ -151,6 +161,7 @@
         "currency": "Euro",
         "area": "357137000",
         "population": "83019000",
+        "neighbors": "",
         "synonyms": [
             "DE",
             "BRD",
@@ -167,6 +178,7 @@
         "currency": "Euro",
         "area": "131957000",
         "population": "10722000",
+        "neighbors": "",
         "synonyms": [
             "GR",
             "Griechenland",
@@ -181,6 +193,7 @@
         "currency": "Forint",
         "area": "93024000",
         "population": "9773000",
+        "neighbors": "Croatia, Slovenia, Austria, Slovakia and Romania",
         "synonyms": [
             "HU",
             "Ungarn",
@@ -195,6 +208,7 @@
         "currency": "Euro",
         "area": "69797000",
         "population": "4904000",
+        "neighbors": "",
         "synonyms": [
             "IE",
             "Irland",
@@ -209,6 +223,7 @@
         "currency": "Euro",
         "area": "301336000",
         "population": "60360000",
+        "neighbors": "",
         "synonyms": [
             "Italien",
             "Italian Republic"
@@ -221,6 +236,7 @@
         "currency": "Euro",
         "area": "64562000",
         "population": "1919968",
+        "neighbors": "Estonia and Lithuania",
         "synonyms": [
             "LV",
             "Lettland",
@@ -236,6 +252,7 @@
         "currency": "Euro",
         "area": "65300000",
         "population": "2793722",
+        "neighbors": "Latvia and Poland",
         "synonyms": [
             "LT",
             "Litauen",
@@ -251,6 +268,7 @@
         "currency": "Euro",
         "area": "2586000",
         "population": "614000",
+        "neighbors": "",
         "synonyms": [
             "LU",
             "Luxemburg",
@@ -265,6 +283,7 @@
         "currency": "Euro",
         "area": "316000",
         "population": "494000",
+        "neighbors": "",
         "synonyms": [
             "MT",
             "Republic of Malta"
@@ -277,6 +296,7 @@
         "currency": "Euro",
         "area": "41540000",
         "population": "17282000",
+        "neighbors": "",
         "synonyms": [
             "NL",
             "Niederlande",
@@ -291,6 +311,7 @@
         "currency": "Złoty",
         "area": "312679000",
         "population": "37973000",
+        "neighbors": "Lithuania, Germany, Czech Republic and Slovakia",
         "synonyms": [
             "PL",
             "Polen",
@@ -307,6 +328,7 @@
         "currency": "Euro",
         "area": "92212000",
         "population": "10277000",
+        "neighbors": "",
         "synonyms": [
             "PT",
             "Portuguese Republic"
@@ -319,6 +341,7 @@
         "currency": "Romanian leu",
         "area": "238391000",
         "population": "19402000",
+        "neighbors": "Bulgaria and Hungary",
         "synonyms": [
             "RO",
             "Rumänien",
@@ -334,6 +357,7 @@
         "currency": "Euro",
         "area": "49036000",
         "population": "5450000",
+        "neighbors": "",
         "synonyms": [
             "SK",
             "Slowakai",
@@ -347,6 +371,7 @@
         "currency": "Euro",
         "area": "20273000",
         "population": "2081000",
+        "neighbors": "",
         "synonyms": [
             "SI",
             "Slowenien",
@@ -360,6 +385,7 @@
         "currency": "Euro",
         "area": "505990000",
         "population": "46935000",
+        "neighbors": "",
         "synonyms": [
             "ES",
             "Spanien",
@@ -374,6 +400,7 @@
         "currency": "Swedish krona",
         "area": "438576000",
         "population": "10230000",
+        "neighbors": "",
         "synonyms": [
             "SE",
             "Schweden",
@@ -388,6 +415,7 @@
         "currency": "Pound sterling",
         "area": "248528000",
         "population": "66647000",
+        "neighbors": "",
         "synonyms": [
             "GB",
             "UK",

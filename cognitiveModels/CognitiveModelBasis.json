@@ -1,6 +1,6 @@
 {
     "luis_schema_version": "4.0.0",
-    "versionId": "0.7.7",
+    "versionId": "0.8",
     "name": "KnowledgeBot",
     "desc": "Luis Model for KnowledgeBot",
     "culture": "en-us",

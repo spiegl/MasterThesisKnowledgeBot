@@ -95,7 +95,7 @@
             "area of $country?",
             "area $country?"
         ],
-        "defaultAnswer": "$country spreads over a area of $countryProperty K km2."
+        "defaultAnswer": "$country spreads over a area of $countryProperty km2."
     },
     {
         "canonicalForm": "population",
@@ -115,6 +115,23 @@
             "population of $country",
             "population $country?"
         ],
-        "defaultAnswer": "$country has a population of $countryProperty K."
+        "defaultAnswer": "$country has a population of $countryProperty."
+    },
+    {
+        "canonicalForm": "memberStates",
+        "name": "member states",
+        "dataType": "number",
+        "synonyms": [
+            "members",
+            "member",
+            "countries"
+        ],
+        "utterances": [
+            "How may member states does the EU have?",
+            "How may member do the EU have?",
+            "member states of the EU?",
+            "member states eu?"
+        ],
+        "defaultAnswer": "The EU has 28 member states."
     }
 ]

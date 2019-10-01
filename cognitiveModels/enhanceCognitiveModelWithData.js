@@ -23,6 +23,7 @@ const outputModelPath = "./output.json";
  * Read data from data directory
  */
 let data = require("../data/data.json");
+let dataEU = require("../data/dataEU.json");
 let countryPropertiesData = require("../data/countryProperties.json");
 
 /**
@@ -58,6 +59,18 @@ data.map(item => {
 
   countries.subLists.push(country);
 });
+
+// add EU as country
+let eu = {
+    "canonicalForm": dataEU.iso.toLowerCase(),
+    "list": [
+        dataEU.name,
+        dataEU.name.toLowerCase(),
+        dataEU.iso
+    ]
+};
+dataEU.synonyms.map(item => eu.list.push(item));
+countries.subLists.push(eu);
 
 // log number of countries
 console.log("\t" + countries.subLists.length + " records processed ...");

@@ -1,10 +1,15 @@
 class KmConnector {
     constructor() {
         this.data = require("./data/dataQueryCache.json");
+        this.dataEU = require("./data/dataEU.json");
         this.countryProperties = require("./data/countryPropertiesQueryCache.json");
     }
 
     query(country, property) {
+        if (country == 'eu') {
+            return this.dataEU[property];
+        }
+
         return this.data[country][property];
     }
 
@@ -54,7 +59,7 @@ class KmConnector {
         // build return object
         for (let i in countries) {
             countriesString += countries[i].name;
-            if (i < countries.length-1) countriesString += ", ";
+            if (i < countries.length - 1) countriesString += ", ";
         }
 
         return {

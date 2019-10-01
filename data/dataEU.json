@@ -1,0 +1,15 @@
+{
+    "iso": "EU",
+    "name": "European Union",
+    "capital": "Brussels",
+    "currency": "Euro",
+    "area": "4381324",
+    "population": "512600000",
+    "synonyms": [
+        "Europe",
+        "Europa",
+        "Union",
+        "the EU"
+    ],
+    "member_states": "28"
+}

@@ -152,7 +152,7 @@ class MainDialog extends CancelAndHelpDialog {
         break;
 
       case "QueryKM":
-        let country, property;
+        let country, property, answer;
         try {
             country = luisResult.entities.Country[0][0];
         } catch (error) {
@@ -167,7 +167,7 @@ class MainDialog extends CancelAndHelpDialog {
             break;
         }
 
-        let answer = Data.query(country, property);
+        answer = Data.query(country, property);
 
         let answerText = Data.getAnswerText(property)
           .replace("$countryProperty", answer)

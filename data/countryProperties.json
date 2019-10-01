@@ -118,22 +118,6 @@
         "defaultAnswer": "$country has a population of $countryProperty."
     },
     {
-        "canonicalForm": "memberStates",
-        "name": "member states",
-        "dataType": "string",
-        "synonyms": [
-            "members",
-            "member"
-        ],
-        "utterances": [
-            "How may member states does the EU have?",
-            "How may member do the EU have?",
-            "member states of the EU?",
-            "member states eu?"
-        ],
-        "defaultAnswer": "The EU has 28 member states."
-    },
-    {
         "canonicalForm": "neighbors",
         "name": "neighbors",
         "dataType": "string",

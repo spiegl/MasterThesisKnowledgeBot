@@ -81,7 +81,10 @@
             "km2",
             "sqm2",
             "square meters",
-            "square kilometers"
+            "square kilometers",
+            "size",
+            "groß",
+            "Größe"
         ],
         "utterances": [
             "How big is $country?",

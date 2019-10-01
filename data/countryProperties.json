@@ -120,7 +120,7 @@
     {
         "canonicalForm": "memberStates",
         "name": "member states",
-        "dataType": "number",
+        "dataType": "string",
         "synonyms": [
             "members",
             "member",

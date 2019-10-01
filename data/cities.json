@@ -1,8 +1,9 @@
 [
     {
-        "canonicalName": "lva-riga",
-        "country": "Latvia",
+        "canonicalForm": "lva-riga",
         "name": "Riga",
+        "country": "Latvia",
+        "currency": "Euro",
         "area": "307",
         "population": "615369",
         "synonyms": [
@@ -10,9 +11,10 @@
         ]
     },
     {
-        "canonicalName": "lva-vilnius",
-        "country": "Lithuania",
+        "canonicalForm": "ltu-vilnius",
         "name": "Vilnius",
+        "country": "Lithuania",
+        "currency": "Euro",
         "area": "401",
         "population": "570806",
         "synonyms": [
@@ -20,9 +22,10 @@
         ]
     },
     {
-        "canonicalName": "bgr-sofia",
-        "country": "Sofia",
-        "name": "Bulgaria",
+        "canonicalForm": "bgr-sofia",
+        "name": "Sofia",
+        "country": "Bulgaria",
+        "currency": "Lev",
         "area": "492",
         "population": "1241675",
         "synonyms": [
@@ -30,9 +33,10 @@
         ]
     },
     {
-        "canonicalName": "rou-bucharest",
-        "country": "Bucharest",
-        "name": "Romania",
+        "canonicalForm": "rou-bucharest",
+        "name": "Bucharest",
+        "country": "Romania",
+        "currency": "Romanian leu",
         "area": "228",
         "population": "1883425",
         "synonyms": [

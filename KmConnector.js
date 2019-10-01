@@ -2,12 +2,16 @@ class KmConnector {
     constructor() {
         this.data = require("./data/dataQueryCache.json");
         this.dataEU = require("./data/dataEU.json");
+        this.cities = require("./data/citiesQueryCache.json");
         this.countryProperties = require("./data/countryPropertiesQueryCache.json");
     }
 
     query(country, property) {
         if (country == 'eu') {
             return this.dataEU[property];
+        }
+        if (this.cities[country] !== undefined) {
+            return this.cities[country][property];
         }
 
         return this.data[country][property];

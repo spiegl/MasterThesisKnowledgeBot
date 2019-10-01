@@ -52,6 +52,35 @@ fs.writeFileSync(
 console.log("\tFile written to " + outputFile);
 
 /**
+ * Cities data file
+ */
+
+// Config
+inputFile = "./cities.json";
+outputFile = "./citiesQueryCache.json";
+
+// Start processing
+console.log("\n\tProcessing " + inputFile);
+cities = require(inputFile, "utf8");
+
+queryCache = {};
+
+cities.map(item => {
+  queryCache[item.canonicalForm.toLowerCase()] = item;
+});
+
+// log number of countries
+console.log("\t" + cities.length + " records modified ...");
+
+// Write query cache file
+fs.writeFileSync(
+  path.resolve(__dirname, outputFile),
+  JSON.stringify(queryCache),
+  "utf8"
+);
+console.log("\tFile written to " + outputFile);
+
+/**
  * Country properties file
  */
 

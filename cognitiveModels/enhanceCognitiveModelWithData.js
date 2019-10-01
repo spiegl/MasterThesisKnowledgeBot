@@ -24,6 +24,7 @@ const outputModelPath = "./output.json";
  */
 let data = require("../data/data.json");
 let dataEU = require("../data/dataEU.json");
+let cities = require("../data/cities.json");
 let countryPropertiesData = require("../data/countryProperties.json");
 
 /**
@@ -71,6 +72,19 @@ let eu = {
 };
 dataEU.synonyms.map(item => eu.list.push(item));
 countries.subLists.push(eu);
+
+// add cities as countries
+cities.map(item => {
+    let country = {};
+    country["canonicalForm"] = item.canonicalForm.toLowerCase();
+    country["list"] = [];
+    country.list.push(item.name);
+    country.list.push(item.name.toLowerCase());
+    item.synonyms.map(innerItem => country.list.push(innerItem));
+  
+    countries.subLists.push(country);
+  });
+  
 
 // log number of countries
 console.log("\t" + countries.subLists.length + " records processed ...");

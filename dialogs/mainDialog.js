@@ -152,8 +152,20 @@ class MainDialog extends CancelAndHelpDialog {
         break;
 
       case "QueryKM":
-        let country = luisResult.entities.Country[0][0];
-        let property = luisResult.entities.CountryProperty[0][0];
+        let country, property;
+        try {
+            country = luisResult.entities.Country[0][0];
+        } catch (error) {
+            await stepContext.context.sendActivity('Sorry, I didn\'t get the country.');
+            break;
+        }
+
+        try {
+            property = luisResult.entities.CountryProperty[0][0];
+        } catch (error) {
+            await stepContext.context.sendActivity('Sorry, I didn\'t get the property of the country (' +  Data.query(country, 'name') + ') you were asking for.');
+            break;
+        }
 
         let answer = Data.query(country, property);
 

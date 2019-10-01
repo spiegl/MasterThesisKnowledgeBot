@@ -60,7 +60,7 @@ class KmConnector {
         return {
             num: countries.length,
             items: countries,
-            string: countries.length + ": " + countriesString
+            string: countriesString
         };
     }
 

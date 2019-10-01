@@ -20,7 +20,7 @@ class KmConnector {
         return this.data[country][property];
     }
 
-    filter(property, operator, value) {
+    filterNum(property, operator, value) {
         // check weather the property is an integer value
         if (this.countryProperties[property].dataType = 'int') {
             value = parseInt(value);
@@ -56,7 +56,8 @@ class KmConnector {
                 console.log('default');
                 for (let i in this.data) {
                     let item = this.data[i];
-                    if (item[property] == value) {
+                    console.log(property, item[property].toLowerCase(), value)
+                    if (item[property].toLowerCase() == value) {
                         countries.push(item);
                     }
                 }
@@ -75,6 +76,31 @@ class KmConnector {
             string: countriesString
         };
     }
+
+    filter(property, value) {
+        let countries = [];
+        let countriesString = "";
+
+        for (let i in this.data) {
+            let item = this.data[i];
+            if (item[property].toLowerCase() == value) {
+                countries.push(item);
+            }
+        }
+
+        // build return object
+        for (let i in countries) {
+            countriesString += countries[i].name;
+            if (i < countries.length - 1) countriesString += ", ";
+        }
+
+        return {
+            num: countries.length,
+            items: countries,
+            string: countriesString
+        };
+    }
+
 
     aggregateFunction(property, operator, value) {
         // check weather the property is an integer value

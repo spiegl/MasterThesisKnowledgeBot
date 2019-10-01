@@ -193,13 +193,43 @@ class MainDialog extends CancelAndHelpDialog {
 
                 break;
             case "FilterQueryKMNum":
+                let filterNumProperty, filterNumOperator, filterNumValue;
+
+                filterNumProperty = luisResult.entities.CountryProperty[0][0];
+                filterNumOperator = luisResult.entities.FilterOperator[0][0];
+                try {
+                    filterNumValue = luisResult.entities.FilterValueNum[0].number[0];
+                } catch (error) {
+                    filterNumValue = luisResult.entities.number[0];
+                }
+
+                const filterNumAnswer = Data.filterNum(
+                    filterNumProperty,
+                    filterNumOperator,
+                    filterNumValue
+                );
+
+                let filterNumAnswerText =
+                    "The following " +
+                    filterNumAnswer.num +
+                    " countries have " +
+                    filterNumOperator +
+                    " than " +
+                    filterNumValue +
+                    " " +
+                    filterNumProperty +
+                    ": " +
+                    filterNumAnswer.string +
+                    ".";
+
+                await stepContext.context.sendActivity(filterNumAnswerText);
+                break;
+            case "FilterQueryKM":
                 let filterProperty = luisResult.entities.CountryProperty[0][0];
-                let filterOperator = luisResult.entities.FilterOperator[0][0];
-                let filterValue = luisResult.entities.FilterValue[0].number[0];
+                let filterValue = luisResult.entities.FilterValue[0][0];
 
                 const filterAnswer = Data.filter(
                     filterProperty,
-                    filterOperator,
                     filterValue
                 );
 
@@ -207,8 +237,6 @@ class MainDialog extends CancelAndHelpDialog {
                     "The following " +
                     filterAnswer.num +
                     " countries have " +
-                    filterOperator +
-                    " than " +
                     filterValue +
                     " " +
                     filterProperty +
@@ -217,11 +245,6 @@ class MainDialog extends CancelAndHelpDialog {
                     ".";
 
                 await stepContext.context.sendActivity(filterAnswerText);
-                break;
-            case "FilterQueryKM":
-                await stepContext.context.sendActivity(
-                    "Indent is FilterQueryKM. Not programmed yet!"
-                );
                 break;
             case "AggregateQueryKM":
                 await stepContext.context.sendActivity(

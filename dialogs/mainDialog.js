@@ -169,6 +169,11 @@ class MainDialog extends CancelAndHelpDialog {
 
         answer = Data.query(country, property);
 
+        if (answer === "") {
+            await stepContext.context.sendActivity("I understood your question, but i do not have any data on this. Sorry!");
+            break;
+        }
+
         let answerText = Data.getAnswerText(property)
           .replace("$countryProperty", answer)
           .replace("$country", Data.query(country, "name"));

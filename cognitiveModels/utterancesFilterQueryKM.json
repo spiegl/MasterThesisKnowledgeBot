@@ -12,5 +12,12 @@
             "CountryProperty": "pay",
             "FilterValue": "Euro"
         }
+    },
+    {
+        "text": "In which countries is Euro the currency?",
+        "entities": {
+            "CountryProperty": "currency",
+            "FilterValue": "Euro"
+        }
     }
 ]

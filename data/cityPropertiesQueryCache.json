@@ -1,0 +1,1 @@
+{"country":{"canonicalForm":"country","name":"country","dataType":"string","synonyms":[],"utterances":["$city is the capital of which country?"],"defaultAnswer":"$country is the capital of $countryProperty."}}

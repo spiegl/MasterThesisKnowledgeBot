@@ -4,6 +4,7 @@ class KmConnector {
         this.dataEU = require("./data/dataEU.json");
         this.cities = require("./data/citiesQueryCache.json");
         this.countryProperties = require("./data/countryPropertiesQueryCache.json");
+        this.cityProperties = require("./data/cityPropertiesQueryCache.json");
     }
 
     query(country, property) {
@@ -11,6 +12,8 @@ class KmConnector {
             return this.dataEU[property];
         }
         if (this.cities[country] !== undefined) {
+            if (property == 'capital') property = 'country';
+            this.cityAnswer = true;
             return this.cities[country][property];
         }
 
@@ -100,6 +103,11 @@ class KmConnector {
     }
 
     getAnswerText(property) {
+        console.log('try to get an answer');
+
+        if (this.cityAnswer && (property == 'capital' || property == 'country')) {
+            return this.cityProperties['country'].defaultAnswer;
+        }
         return this.countryProperties[property].defaultAnswer;
     }
 }

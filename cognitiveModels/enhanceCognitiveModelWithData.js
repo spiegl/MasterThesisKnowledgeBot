@@ -26,6 +26,7 @@ let data = require("../data/data.json");
 let dataEU = require("../data/dataEU.json");
 let cities = require("../data/cities.json");
 let countryPropertiesData = require("../data/countryProperties.json");
+let cityPropertiesData = require("../data/cityProperties.json");
 
 /**
  * Add countries
@@ -117,6 +118,28 @@ console.log(
 );
 
 /**
+ * Add CityProperties
+ */
+
+console.log("\n\tProcessing CityProperties");
+
+// add CityProperties to CountryProperties for the sake of easiness
+cityPropertiesData.map(item => {
+  let prop = {};
+  prop["canonicalForm"] = item.canonicalForm.toLowerCase();
+  prop["list"] = [];
+  prop.list.push(item.name);
+  item.synonyms.map(innerItem => prop.list.push(innerItem));
+
+  countryProperties.subLists.push(prop);
+});
+
+// log number of countries
+console.log(
+  "\t" + cityPropertiesData.length + " records processed ..."
+);
+
+/**
  * Add utterances for QueryKM
  * 
  * {
@@ -127,6 +150,7 @@ console.log(
  */
 console.log("\n\tProcessing utterances for QueryKM");
 
+// countries
 let utterancesRaw = [];
 countryPropertiesData.map(item => {
   item.utterances.map(utterance => utterancesRaw.push(utterance));
@@ -139,6 +163,16 @@ utterancesRaw.map(utterance => {
   });
 });
 
+//  cities
+cityPropertiesData.map(cityProperty => {
+    cityProperty.utterances.map(utterance => {
+        cities.map(city => {
+            utterances.push(utterance.replace("$city", city.name));
+        });
+    });
+});
+
+// finalize for model
 let utterancesFilterKM = [];
 utterances.map(item => {
   let utterance = {

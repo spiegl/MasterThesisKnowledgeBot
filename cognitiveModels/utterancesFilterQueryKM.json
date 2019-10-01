@@ -22,5 +22,21 @@
             "FilterOperator": "more",
             "CountryProperty": "people"
         }
+    },
+    {
+        "text": "Which countries are smaller than 500 km2?",
+        "entities": {
+            "FilterValue": "500",
+            "FilterOperator": "smaller",
+            "CountryProperty": "km2"
+        }
+    },
+    {
+        "text": "Which countries are bigger than 500 km2?",
+        "entities": {
+            "FilterValue": "500",
+            "FilterOperator": "bigger",
+            "CountryProperty": "km2"
+        }
     }
 ]

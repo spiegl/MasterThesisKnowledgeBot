@@ -13,13 +13,14 @@ const {
   TextPrompt,
   WaterfallDialog
 } = require("botbuilder-dialogs");
+const { CancelAndHelpDialog } = require("./cancelAndHelpDialog");
 
 const { KmConnector } = require("../KmConnector");
-Data = new KmConnector();
+const Data = new KmConnector();
 
 const MAIN_WATERFALL_DIALOG = "mainWaterfallDialog";
 
-class MainDialog extends ComponentDialog {
+class MainDialog extends CancelAndHelpDialog {
   constructor(luisRecognizer, bookingDialog) {
     super("MainDialog");
 
@@ -108,6 +109,11 @@ class MainDialog extends ComponentDialog {
     const luisResult = await this.luisRecognizer.executeLuisQuery(
       stepContext.context
     );
+
+    console.log(luisResult);
+    console.log(luisResult.entities);
+    console.log(luisResult.entities.$instance);
+
     switch (LuisRecognizer.topIntent(luisResult)) {
       case "BookFlight":
         // Extract the values for the composite entities from the LUIS result.
@@ -146,14 +152,11 @@ class MainDialog extends ComponentDialog {
         break;
 
       case "QueryKM":
-        console.log(luisResult);
-        console.log(luisResult.entities);
-        console.log(luisResult.entities.$instance);
-
         let country = luisResult.entities.Country[0][0];
         let property = luisResult.entities.CountryProperty[0][0];
 
         let answer = Data.query(country, property);
+
         let answerText = Data.getAnswerText(property)
           .replace("$countryProperty", answer)
           .replace("$country", Data.query(country, "name"));
@@ -165,9 +168,30 @@ class MainDialog extends ComponentDialog {
 
         break;
       case "FilterQueryKM":
-        await stepContext.context.sendActivity(
-          "Indent is FitlerQueryKM. Not programmed yet!"
+        let filterProperty = luisResult.entities.CountryProperty[0][0];
+        let filterOperator = luisResult.entities.FilterOperator[0][0];
+        let filterValue = luisResult.entities.FilterValue[0].number[0];
+
+        const filterAnswer = Data.filter(
+          filterProperty,
+          filterOperator,
+          filterValue
         );
+
+        let filterAnswerText =
+          "The following " +
+          filterAnswer.num +
+          " countries have " +
+          filterOperator +
+          " than " +
+          filterValue +
+          " " +
+          filterProperty +
+          ": " +
+          filterAnswer.string +
+          ".";
+
+        await stepContext.context.sendActivity(filterAnswerText);
         break;
       case "AggregateQueryKM":
         await stepContext.context.sendActivity(

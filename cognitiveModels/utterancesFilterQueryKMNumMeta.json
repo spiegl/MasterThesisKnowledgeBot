@@ -1,0 +1,49 @@
+{
+    "utterances": [
+        {
+            "text": "Which countries do have $operator than $filterValue inhabitants?",
+            "entities": {
+                "CountryProperty": "inhabitants"
+            }
+        },
+        {
+            "text": "Which countries live $operator than $filterValue people?",
+            "entities": {
+                "CountryProperty": "people"
+            }
+        },
+        {
+            "text": "How may countries do have $operator than $filterValue people living in it?",
+            "entities": {
+                "CountryProperty": "people"
+            }
+        },
+        {
+            "text": "How may countries do have a $operator area than $filterValue km2?",
+            "entities": {
+                "CountryProperty": "area"
+            }
+        }
+    ],
+    "defaultAnswer": "",
+    "vars": {
+        "$filterValue": [
+            "5000K",
+            "5000 K",
+            "5000",
+            "15 million",
+            "one thousand",
+            "1000000"
+        ],
+        "$operator": [
+            "more",
+            "larger",
+            "higher",
+            "bigger",
+            "less",
+            "smaller",
+            "lesser",
+            "little"
+        ]
+    }
+}
